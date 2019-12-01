@@ -24,6 +24,23 @@ a {
   color: #fff;
 }
 
+section {
+  padding: 96px 0;
+  text-align: center;
+}
+
+.section-title {
+  text-transform: uppercase;
+  margin: 0 auto;
+  @include txt-style ($font-text, #000, 40px);
+}
+
+.section-subtitle {
+  font-family: $font-header-two;
+  margin-bottom: 80px;
+  font-style: italic;
+}
+
 /* Navigation */
 .navigation ul{
   list-style: none;
@@ -89,8 +106,23 @@ a {
   padding: 10px;
 }
 
+/* Services */
+.service {
+  text-align: center;
+}
+
+.service-title {
+  color: #000;
+}
+
+/* Portfolio */
+
+
 /* Media */
 @media (max-width: 767px) {
+  .section-subtitle {
+    margin-bottom: 30px;
+  }
 
   .navigation .row{
     text-align: center;
@@ -115,5 +147,9 @@ a {
 
   .page-subtitle {
     font-size: 36px;
+  }
+
+  .service {
+    padding-bottom: 30px;
   }
 }
