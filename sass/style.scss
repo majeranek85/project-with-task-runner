@@ -35,10 +35,19 @@ section {
   @include txt-style ($font-text, #000, 40px);
 }
 
-.section-subtitle {
+.section-subtitle,
+.card-subtitle {
   font-family: $font-header-two;
   margin-bottom: 80px;
   font-style: italic;
+}
+
+.card {
+  text-align: center;
+}
+
+.card-title {
+  color: #000;
 }
 
 /* Navigation */
@@ -107,16 +116,37 @@ section {
 }
 
 /* Services */
-.service {
-  text-align: center;
-}
 
-.service-title {
-  color: #000;
-}
 
 /* Portfolio */
+.portfolio {
+  background: #f7f7f7;
+}
 
+.portfolio .row {
+  justify-content: space-around;
+}
+
+.portfolio .card {
+  padding: 0;
+  background: #fff;
+  max-width: 290px;
+  margin-bottom: 30px;
+}
+
+.card-subtitle {
+  margin-bottom: 35px;
+}
+
+.image {
+  height: 300px;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: none;
+  }
+}
 
 /* Media */
 @media (max-width: 767px) {
